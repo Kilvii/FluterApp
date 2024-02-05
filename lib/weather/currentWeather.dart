@@ -19,7 +19,7 @@ class _currentWeather extends State<currentWeather> {
   var windSpeed;
 
   Future getWeather() async {
-    var url = "https://api.openweathermap.org/data/2.5/weather?q=Saransk,RU&appid=d9785bd3fb272b61b0618c4861c3ca06";
+    var url = "Your Weather API URL";
     var response = await Dio().get(url);
     var results = response.data;
     var res1 = results.toString().split(":");
